@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(120deg, #f4f6f8 0%, #dde1e7 100%);
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #25405c;
+      color: #fff;
+      padding: 2rem 1.5rem 1.2rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(37,64,92,0.13);
+      text-align: center;
+    }
+    .headshot {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      margin: 0 0 0.3em 0;
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0 0 1em 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    nav {
+      background: #1b2c3a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.7rem 0;
+      box-shadow: 0 1px 3px rgba(37,64,92,0.09);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffe082;
+    }
+    .container {
+      max-width: 920px;
+      margin: 2.5rem auto 0 auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 2.2rem;
+      box-shadow: 0 2px 32px rgba(37,64,92,0.08);
+    }
+    h2 {
+      color: #25405c;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-top: 0;
+    }
+    .values {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.2rem;
+      margin-top: 2rem;
+    }
+    .value-card {
+      background: #f6fafd;
+      padding: 1.2rem 1rem;
+      border-radius: 1.1rem;
+      box-shadow: 0 2px 8px rgba(37,64,92,0.05);
+      text-align: center;
+    }
+    .value-card h3 {
+      margin: 0.5rem 0 0.4rem 0;
+      color: #20405a;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .value-card p {
+      margin: 0.5rem 0 0 0;
+      font-size: 1rem;
+      color: #222b;
+    }
+    .projects {
+      margin-top: 3rem;
+    }
+    .project-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .project-list li {
+      background: #f4f6fa;
+      margin: 1rem 0;
+      padding: 1.2rem 1rem;
+      border-radius: 1.1rem;
+      box-shadow: 0 2px 8px rgba(37,64,92,0.05);
+      font-size: 1.02rem;
+    }
+    footer {
+      margin-top: 3rem;
+      background: #25405c;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1.1rem;
+    }
+    footer h2 {
+      color: #fff;
+    }
+    footer a {
+      color: #ffe082;
+      text-decoration: none;
+    }
+    @media (max-width: 800px) {
+      .values {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="headshot.jpg" alt="Headshot of Samuel Darkow" class="headshot">
+    <h1>Samuel Darkow</h1>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I enjoy enabling teams to achieve high quality, creative, and effective outcomes.</p>
+      <p>I’m currently pursuing my MBA at the University of Illinois and exploring leadership roles in operations and engineering.</p>
+    </section>
+    <section id="roles" class="projects">
+      <h2>Leadership Roles</h2>
+      <ul class="project-list">
+        <li><strong>Founder - Scarab Tech LLC</strong>: Performing market research to set direction, holding working meetings to maintain momentum, and ensuring cross-functional alignment across a dynamic, fast-paced startup environment.</li>
+        <li><strong>Tech Lead - General Dynamics</strong>: Led two cross-functional engineering teams (9 engineers total) to successfully deliver complex projects on schedule and within budget, aligning technical execution with overarching business objectives.</li>
+        <li><strong>Process Lead - General Dynamics</strong>: Drove improvements in technical processes by facilitating collaboration across engineering, product, and executive teams to improve decision-making and delivery efficiency.</li>
+      </ul>
+    </section>
+    <section id="skills" class="projects">
+        <h2>Key Skills</h2>
+        <p style="margin-left: 1.5em;"><strong>•</strong> Team inspiration & motivation</p>
+        <p style="margin-left: 1.5em;"><strong>•</strong> Strategic planning & execution</p>
+        <p style="margin-left: 1.5em;"><strong>•</strong> Cross-functional collaboration & stakeholder alignment</p>
+        <p style="margin-left: 1.5em;"><strong>•</strong> Mentoring & talent development</p>
+        <p style="margin-left: 1.5em;"><strong>•</strong> Conflict resolution</p>
+        <p style="margin-left: 1.5em;"><strong>•</strong> Objectives & metrics development</p>
+        <p style="margin-left: 1.5em;"><strong>•</strong> Risk mitigation & prioritization</p>
+        <p style="margin-left: 1.5em;"><strong>•</strong> Budget & timeline management</p>
+    </section>
+  </main>
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Phone: +1 (774) 287-2389 <br>
+      Email: <a href="mailto:sddarkow@gmail.com?subject=Hey Sam">sddarkow@gmail.com</a> <br>
+      LinkedIn: <a href="https://linkedin.com/in/samuel-darkow/">linkedin.com/in/samuel-darkow</a> <br>
+      GitHub: <a href="https://github.com/sddark/">github.com/sddark</a></p>
+</footer>
+</body>
+</html>
