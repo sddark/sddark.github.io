@@ -72,6 +72,11 @@
       font-weight: 800;
       margin-top: 0;
     }
+    h3 {
+      margin-top: 1.5em;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 4px;
+    }
     .values {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -127,6 +132,53 @@
       color: #ffe082;
       text-decoration: none;
     }
+    .download {
+      margin-bottom: 1em;
+    }
+    .download a {
+      display: inline-block;
+      padding: 0.4em 0.8em;
+      background-color: #25405c;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .contact-info {
+      text-align: left;
+      margin-bottom: 2em;
+    }
+    .contact-info a {
+      color: #25405c;
+      text-decoration: none;
+    }
+    form {
+      background: white;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.6em;
+      margin-top: 0.4em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      display: inline-block;
+      padding: 0.4em 0.8em;
+      background-color: #25405c;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    button:hover {
+      background-color: #1a2f45;
+    }
     @media (max-width: 800px) {
       .values {
         grid-template-columns: 1fr;
@@ -144,34 +196,34 @@
   </header>
   <nav>
     <a href="index.html">Home</a>
-    <a href="#summary">About</a>
+    <a href="about.html">About</a>
     <a href="Resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+    <a href="#contact">Contact</a>
   </nav>
   <main class="container">
     <section id="summary">
-      <h2>Professional Summary</h2>
-      <p>I'm an engineering leader with a background in embedded systems. I spent over four years at General Dynamics Electric Boat, where I had the opportunity to work with exceptional leaders and mentors.</p>
-    </section>
-    <section id="focus" class="projects">
-        <h2>Current Focus</h2>
-        <p>I’m currently an MBA candidate at the University of Illinois Urbana-Champaign, graduating in December, with a focus on strategic leadership and data analytics.</p>
-        <p>Alongside my studies, I founded a small technology company where I lead a team of three engineers developing prototype IoT devices. We experiment with new languages, processes, sensors, and frameworks to rapidly test MVPs.</p>
-    </section>
-    <section id="Hobbies" class="projects">
-        <h2>Hobbies</h2>
-        <p>Outside of work, I’m an avid backpacker, I have hiked 47 of the 48 4,000 footers in NH. All I have left is Owl's Head.</p>
-        <p>I try to read or listen to one book a week, you can see my list at <a href="https://www.goodreads.com/user/show/191653357-sam-darkow" target="_blank">Goodreads</a>.</p>
-        <p>I enjoy rowing and competed at the University of Rhode Island (URI), if interested you can see my rowing log at <a href="https://log.concept2.com/profile/2585606/log" target="_blank">Concept2</a>.</p>
-        <p>I enjoy sailing and competed at URI on the club team, I have placed first and second in amateur regatas. I now own a sunfish that is over twice my age.</p>
-    </section>
-  </main>
-  <footer id="contact">
-    <h2>Contact</h2>
-    <p>Phone: +1 (774) 287-2389 <br>
-      Email: <a href="mailto:sddarkow@gmail.com?subject=Hey Sam">sddarkow@gmail.com</a> <br>
-      LinkedIn: <a href="https://linkedin.com/in/samuel-darkow/">linkedin.com/in/samuel-darkow</a> <br>
-      GitHub: <a href="https://github.com/sddark/">github.com/sddark</a></p>
-</footer>
+
+      
+  <h1>Contact Me</h1>
+
+  <div class="contact-info">
+    <p>Email: <a href="mailto:sddarkow@gmail.com">sddarkow@gmail.com</a></p>
+    <p>Phone: <a href="tel:+17742872389">+1 (774) 287-2389</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/samuel-darkow" target="_blank">linkedin.com/in/samuel-darkow</a></p>
+  </div>
+
+  <form action="https://formspree.io/f/mnnvwebe" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+    </main>
 </body>
 </html>

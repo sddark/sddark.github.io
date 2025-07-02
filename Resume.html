@@ -72,6 +72,11 @@
       font-weight: 800;
       margin-top: 0;
     }
+    h3 {
+      margin-top: 1.5em;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 4px;
+    }
     .values {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -127,6 +132,17 @@
       color: #ffe082;
       text-decoration: none;
     }
+    .download {
+      margin-bottom: 1em;
+    }
+    .download a {
+      display: inline-block;
+      padding: 0.4em 0.8em;
+      background-color: #25405c;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
     @media (max-width: 800px) {
       .values {
         grid-template-columns: 1fr;
@@ -144,26 +160,60 @@
   </header>
   <nav>
     <a href="index.html">Home</a>
-    <a href="#summary">About</a>
-    <a href="Resume.html">Resume</a>
+    <a href="about.html">About</a>
+    <a href="#download">Resume</a>
     <a href="contact.html">Contact</a>
   </nav>
   <main class="container">
     <section id="summary">
-      <h2>Professional Summary</h2>
-      <p>I'm an engineering leader with a background in embedded systems. I spent over four years at General Dynamics Electric Boat, where I had the opportunity to work with exceptional leaders and mentors.</p>
-    </section>
-    <section id="focus" class="projects">
-        <h2>Current Focus</h2>
-        <p>I’m currently an MBA candidate at the University of Illinois Urbana-Champaign, graduating in December, with a focus on strategic leadership and data analytics.</p>
-        <p>Alongside my studies, I founded a small technology company where I lead a team of three engineers developing prototype IoT devices. We experiment with new languages, processes, sensors, and frameworks to rapidly test MVPs.</p>
-    </section>
-    <section id="Hobbies" class="projects">
-        <h2>Hobbies</h2>
-        <p>Outside of work, I’m an avid backpacker, I have hiked 47 of the 48 4,000 footers in NH. All I have left is Owl's Head.</p>
-        <p>I try to read or listen to one book a week, you can see my list at <a href="https://www.goodreads.com/user/show/191653357-sam-darkow" target="_blank">Goodreads</a>.</p>
-        <p>I enjoy rowing and competed at the University of Rhode Island (URI), if interested you can see my rowing log at <a href="https://log.concept2.com/profile/2585606/log" target="_blank">Concept2</a>.</p>
-        <p>I enjoy sailing and competed at URI on the club team, I have placed first and second in amateur regatas. I now own a sunfish that is over twice my age.</p>
+
+      <div class="download" style="text-align: center;">
+        <a href="Darkow_Resume.pdf" target="_blank" download>Download PDF Resume</a>
+      </div>
+
+        <h3>Summary</h3>
+  <p>
+    Quality-driven MBA candidate and embedded software engineer passionate about leading cross-functional teams, mentoring, and driving technical innovation to deliver solutions that align with strategic business goals.
+  </p>
+  <h3>Education</h3>
+  <p><strong>University of Illinois Urbana-Champaign</strong> – Master of Business Administration (Anticipated Dec 2025)</p>
+  <ul>
+    <li>GPA: 3.89 / 4.00</li>
+    <li>Specializations: Strategic Leadership and Management, Strategic Innovation, Business Analytics</li>
+  </ul>
+  <p><strong>University of Rhode Island</strong> – B.S. in Electrical Engineering (May 2020)</p>
+  <ul>
+    <li>GPA: 3.65 / 4.00, Magna Cum Laude</li>
+    <li>Tau Beta Pi Member</li>
+  </ul>
+  <h3>Experience</h3>
+  <p><strong>General Dynamics Electric Boat</strong> – Groton, CT</p>
+  <p><em>Senior Embedded System Software Engineer</em> (Aug 2021 – Jun 2024)</p>
+  <ul>
+    <li>Led 2 cross-functional engineering teams (9 engineers) to deliver complex projects on time and within budget.</li>
+    <li>Managed roadmaps using Agile and Waterfall (Jira, Microsoft Project).</li>
+    <li>Oversaw $8M+ budgets, resources, and risk mitigation plans.</li>
+    <li>Coordinated across engineering, product, and executive teams to align goals and decisions.</li>
+    <li>Mentored 3 engineers who were subsequently promoted.</li>
+    <li>Improved product quality by 15% through CI/CD, model-based design, and validation processes.</li>
+    <li>Held active security clearance.</li>
+  </ul>
+  <p><em>Embedded System Software Engineer</em> (Jun 2020 – Aug 2021)</p>
+  <ul>
+    <li>Developed software for 4 control systems using C++, Rational DOORS, and VectorCAST.</li>
+    <li>Produced 3 white papers, 6 trade studies, and multiple proposals to guide technical decisions.</li>
+  </ul>
+  <h3>Skills</h3>
+  <ul>
+    <li><strong>Languages:</strong> Python, MATLAB, Simulink, C++</li>
+    <li><strong>Tools:</strong> Git, Jira, Confluence, Bitbucket, Rational DOORS, Microsoft Project</li>
+    <li><strong>Methodologies:</strong> Agile, Waterfall, MBSE</li>
+  </ul>
+  <h3>Honors and Awards</h3>
+  <ul>
+    <li>6 Technical Excellence Awards (Mar 2021 – Dec 2023)</li>
+    <li>Eagle Scout Award (Feb 2016)</li>
+  </ul>
     </section>
   </main>
   <footer id="contact">
